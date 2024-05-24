@@ -75,7 +75,7 @@ function Square({
   if (!value) {
     return (
       <button
-        className="w-[100px] h-[100px] text-[5rem] text-[#e8e5e5] border-[solid] border-[1px] border-[black] flex justify-center items-center"
+        className="w-24 h-24 text-[5rem] text-[#e8e5e5] border-[solid] border-[1px] border-[black] flex justify-center items-center"
         onClick={onClick}
         disabled={Boolean(winner)}
       />
@@ -84,7 +84,7 @@ function Square({
   if (value === "O") {
     return (
       <button
-        className="w-[100px] h-[100px] text-[5rem] text-[#e8e5e5] border-solid border-1 border-black bg-green-500 flex justify-center items-center"
+        className="w-24 h-24 text-[5rem] text-[#e8e5e5] border-solid border-1 border-black bg-green-500 flex justify-center items-center"
         disabled
       >
         {value}
@@ -94,7 +94,7 @@ function Square({
   if (value === "X") {
     return (
       <button
-        className="bg-red-500 w-[100px] h-[100px] text-[5rem] text-[#e8e5e5] border border-solid border-1 border-black flex justify-center items-center"
+        className="bg-red-500 w-24 h-24 text-[5rem] text-[#e8e5e5] border border-solid border-1 border-black flex justify-center items-center"
         disabled
       >
         {value}

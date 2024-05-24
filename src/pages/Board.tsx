@@ -158,7 +158,7 @@ function Board() {
         <p>Congratulations you're both winners</p>
       )}
 
-      <div className="grid grid-cols-[repeat(3,_1fr)] m-0 h-[300px] w-[300px]">
+      <div className="grid grid-cols-[repeat(3,_1fr)] m-0 h-auto w-24">
         {Array(9)
           .fill(null)
           .map((_, i) => {
