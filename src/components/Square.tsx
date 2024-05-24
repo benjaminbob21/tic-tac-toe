@@ -81,26 +81,34 @@ function Square({
       />
     );
   }
-  if (value === "O") {
-    return (
+  return (
       <button
-        className="w-24 h-24 text-[5rem] text-[#e8e5e5] border-solid border-1 border-black bg-green-500 flex justify-center items-center"
+        className={`w-24 h-24 text-[5rem] text-[#e8e5e5] border border-solid border-1 border-black flex justify-center items-center ${value=="O"?"bg-green-500":"bg-red-500"}`}
         disabled
       >
         {value}
       </button>
     );
-  }
-  if (value === "X") {
-    return (
-      <button
-        className="bg-red-500 w-24 h-24 text-[5rem] text-[#e8e5e5] border border-solid border-1 border-black flex justify-center items-center"
-        disabled
-      >
-        {value}
-      </button>
-    );
-  }
+  // if (value === "O") {
+    // return (
+    //   <button
+    //     className="w-24 h-24 text-[5rem] text-[#e8e5e5] border-solid border-1 border-black bg-green-500 flex justify-center items-center"
+    //     disabled
+    //   >
+    //     {value}
+    //   </button>
+    // );
+  // }
+  // if (value === "X") {
+  //   return (
+  //     <button
+  //       className="bg-red-500 w-24 h-24 text-[5rem] text-[#e8e5e5] border border-solid border-1 border-black flex justify-center items-center"
+  //       disabled
+  //     >
+  //       {value}
+  //     </button>
+  //   );
+  // }
 }
 
 export default Square;
